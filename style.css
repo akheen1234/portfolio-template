@@ -3,7 +3,7 @@
     --fg: #1a1a2e;
     --muted: #5b6475;
     --card: #f3f4f8;
-    --accent: #e8590c;
+    --accent: #9f0ce8;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -12,6 +12,7 @@
         --fg: #f2f2f7;
         --muted: #a0a6b8;
         --card: #1b1d2b;
+         --accent: #c77dff;
     }
 }
 
@@ -89,4 +90,33 @@ footer {
     text-align: center;
     color: var(--muted);
     padding: 40px 20px;
+}
+
+.hero {
+    background: linear-gradient(135deg, rgba(159, 12, 232, 0.15), transparent 70%);
+}
+
+.card {
+    border: 1px solid transparent;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 8px 24px rgba(159, 12, 232, 0.25);
+}
+
+.chips li {
+    border: 1px solid var(--accent);
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.chips li:hover {
+    background: var(--accent);
+    color: #fff;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
