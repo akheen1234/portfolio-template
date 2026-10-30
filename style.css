@@ -120,3 +120,19 @@ footer {
 nav a:hover {
     text-decoration: underline;
 }
+.made-with {
+    text-align: center;
+    color: var(--muted);
+    padding: 0 20px 40px;
+    margin: 0;
+}
+.hero h1 {
+    font-family: 'Orbitron', system-ui, sans-serif;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, var(--accent), #ff4fd8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
