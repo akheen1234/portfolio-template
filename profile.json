@@ -1,19 +1,17 @@
 {
-    "name": "Your Name",
-    "tagline": "Your one-line introduction",
-    "bio": "Write 2 or 3 sentences about yourself.",
-    "skills": [
-        "Git",
-        "HTML"
-    ],
+    "name": "Akheen Rajendran",
+    "tagline": "Aspiring Software Developer & Tech Enthusiast",
+    "bio": "I am a Computer Science Engineering student passionate about game development, cybersecurity, and problem-solving. I enjoy learning new technologies, exploring programming languages, and building projects that solve real world problems.",
+    "skills": ["Python","Java","C","Git","HTML" ],
     "projects": [
         {
-            "title": "My first project",
-            "desc": "What it does.",
-            "link": "https://github.com/yourname"
+            "title": "IssueFlow",
+            "desc": "IssueFlow is a Java-based issue management system that allows users to report complaints, track their status, and helps administrators assign, manage, and resolve issues efficiently.",
+            "link": "https://github.com/akheen1234/FixedCir"
         }
     ],
     "links": {
-        "github": "https://github.com/yourname"
+        "github": "https://github.com/akheen1234",
+        "linkedin": "https://www.linkedin.com/in/akheen-rajendran-419239412/"
     }
 }
