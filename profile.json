@@ -1,17 +1,36 @@
 {
-    "name": "Akheen Rajendran",
-    "tagline": "Aspiring Software Developer & Tech Enthusiast",
-    "bio": "I am a Computer Science Engineering student passionate about game development, cybersecurity, and problem-solving. I enjoy learning new technologies, exploring programming languages, and building projects that solve real world problems.",
-    "skills": ["Python","Java","C","Git","HTML" ],
-    "projects": [
-        {
-            "title": "IssueFlow",
-            "desc": "IssueFlow is a Java-based issue management system that allows users to report complaints, track their status, and helps administrators assign, manage, and resolve issues efficiently.",
-            "link": "https://github.com/akheen1234/FixedCir"
-        }
-    ],
-    "links": {
-        "github": "https://github.com/akheen1234",
-        "linkedin": "https://www.linkedin.com/in/akheen-rajendran-419239412/"
+  "name": "Akheen Rajendran",
+  "tagline": "Aspiring Software Developer & Tech Enthusiast",
+  "roles": [
+    "Computer Science Engineering student",
+    "Game development explorer",
+    "Cybersecurity learner",
+    "Problem solver"
+  ],
+  "bio": "I am a Computer Science Engineering student passionate about game development, cybersecurity, and problem-solving. I enjoy learning new technologies, exploring programming languages, and building projects that solve real world problems.",
+  "facts": [
+    { "label": "Studying", "value": "B.Tech, Computer Science Engineering" },
+    { "label": "College", "value": "T.K.M. College of Engineering, Kollam" },
+    { "label": "Interests", "value": "Game development · Cybersecurity · Problem solving" },
+    { "label": "Community", "value": "FOSS TKMCE · FOSSSoC-S1" }
+  ],
+  "skillGroups": [
+    { "group": "Languages", "items": ["Python", "Java", "C"] },
+    { "group": "Tools", "items": ["Git"] },
+    { "group": "Web", "items": ["HTML"] }
+  ],
+  "projects": [
+    {
+      "title": "IssueFlow",
+      "desc": "IssueFlow is a Java-based issue management system that allows users to report complaints, track their status, and helps administrators assign, manage, and resolve issues efficiently.",
+      "link": "https://github.com/akheen1234/FixedCir",
+      "tags": ["Java"]
     }
+  ],
+  "links": {
+    "github": "https://github.com/akheen1234",
+    "linkedin": "https://www.linkedin.com/in/akheen-rajendran-419239412/"
+  },
+  "githubLive": true,
+  "footer": "Built by Akheen Rajendran for FOSSSoC-S1 · FOSS TKMCE"
 }

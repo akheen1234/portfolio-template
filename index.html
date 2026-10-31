@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark" data-accent="violet">
 
 <head>
   <meta charset="utf-8">
@@ -7,35 +7,108 @@
   <title>Akheen Rajendran | Portfolio</title>
   <meta name="description" content="Portfolio of Akheen Rajendran, a Computer Science Engineering student interested in game development and cybersecurity.">
   <meta name="author" content="Akheen Rajendran">
-  <meta name="theme-color" content="#9f0ce8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta name="theme-color" content="#07080f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header class="hero">
-    <h1 id="name"></h1>
-    <p id="tagline"></p>
-    <nav id="links"></nav>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div id="boot" class="boot" aria-hidden="true">
+    <pre id="boot-log"></pre>
+    <p class="boot-hint">click or press any key to skip</p>
+  </div>
+
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
+  <div id="progress" class="progress" aria-hidden="true"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <div class="topbar">
+    <a class="brand" href="#top" aria-label="Back to top">&lt;AR/&gt;</a>
+    <nav class="topnav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#skills-section">Skills</a>
+      <a href="#projects-section">Projects</a>
+      <a href="#github" id="nav-github" hidden>GitHub</a>
+      <a href="#terminal">Terminal</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="controls">
+      <button id="accent-toggle" class="icon-btn" type="button" aria-label="Change accent color">◉</button>
+      <button id="mode-toggle" class="icon-btn" type="button" aria-label="Switch between light and dark mode">◐</button>
+    </div>
+  </div>
+
+  <header class="hero" id="top">
+    <p class="chip"><span class="dot"></span> FOSSSoC-S1 · FOSS TKMCE</p>
+    <h1 id="name" class="name"></h1>
+    <p id="tagline" class="tagline"></p>
+    <p class="typed-line" aria-hidden="true"><span class="prompt">&gt;</span> <span id="typed"></span><span class="cursor"></span></p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#projects-section">View projects</a>
+      <div id="links" class="hero-links"></div>
+    </div>
+    <a class="scroll-hint" href="#about" aria-label="Scroll to the About section">↓</a>
   </header>
-  <main>
-    <section>
-      <h2>About</h2>
-      <p id="bio"></p>
+
+  <main id="main">
+    <section id="about" class="reveal">
+      <h2><span class="num">01</span> About</h2>
+      <div class="about-grid">
+        <p id="bio" class="lead"></p>
+        <dl id="facts" class="facts"></dl>
+      </div>
     </section>
-    <section>
-      <h2>Skills</h2>
-      <ul id="skills" class="chips"></ul>
+
+    <section id="skills-section" class="reveal">
+      <h2><span class="num">02</span> Skills</h2>
+      <div id="skills" class="skill-groups"></div>
     </section>
-    <section>
-      <h2>Projects</h2>
+
+    <section id="projects-section" class="reveal">
+      <h2><span class="num">03</span> Projects</h2>
       <div id="projects" class="grid"></div>
     </section>
+
+    <section id="github" class="reveal" hidden>
+      <h2><span class="num">04</span> Live from GitHub</h2>
+      <div id="gh-stats" class="stats"></div>
+      <div id="gh-langs" class="langs"></div>
+      <div id="repos" class="grid"></div>
+    </section>
+
+    <section id="terminal" class="reveal">
+      <h2><span class="num">05</span> Terminal</h2>
+      <p class="lead small">Prefer typing? Explore my portfolio like a command line.</p>
+      <div class="term">
+        <div class="term-bar" aria-hidden="true"><span></span><span></span><span></span><b>visitor@portfolio</b></div>
+        <div id="term-log" class="term-log" role="log" aria-live="polite"></div>
+        <form id="term-form" class="term-form" autocomplete="off">
+          <label for="term-input" class="prompt">visitor@portfolio:~$</label>
+          <input id="term-input" type="text" spellcheck="false" autocapitalize="off" autocomplete="off">
+        </form>
+      </div>
+      <div class="quick" role="group" aria-label="Quick commands">
+        <button type="button" data-cmd="help">help</button>
+        <button type="button" data-cmd="about">about</button>
+        <button type="button" data-cmd="skills">skills</button>
+        <button type="button" data-cmd="projects">projects</button>
+        <button type="button" data-cmd="links">links</button>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <h2><span class="num">06</span> Contact</h2>
+      <p class="lead small">Want to talk about projects, open source or game dev? Find me here.</p>
+      <div id="contact-links" class="hero-links left"></div>
+    </section>
   </main>
+
   <footer id="footer"></footer>
-  <p class="made-with">Built by Akheen Rajendran for FOSSSoC-S1 · FOSS TKMCE</p>
   <script src="script.js"></script>
 </body>
 
